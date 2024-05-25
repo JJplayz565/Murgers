@@ -3,9 +3,9 @@
 	"id": "murgers",
 	"version": "${version}",
 	"name": "Murgers",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds a new food item set",
 	"authors": [
-		"Me!"
+		"JJplayz565"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

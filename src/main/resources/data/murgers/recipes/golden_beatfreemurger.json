@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " G ",
+        "CMW",
+        " G "
+    ],
+    "key": {
+        "G": {
+            "item": "minecraft:gold_ingot"
+        },
+        "M": {
+            "item": "murgers:beatfreemurger"
+        },
+        "C": {
+            "item": "minecraft:golden_carrot"
+        },
+        "W": {
+            "item": "minecraft:glistering_melon_slice"
+        }
+    },
+    "result": {
+        "id": "murgers:golden_beatfreemurger"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": {
+        "item": "murgers:golden_beatfreemurger"
+    },
+    "addition": {
+        "item": "minecraft:netherite_ingot"
+    },
+    "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+    },
+    "result": {
+        "id": "murgers:netherite_beatfreemurger"
+    }
+}

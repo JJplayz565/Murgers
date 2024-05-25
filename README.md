@@ -9,13 +9,12 @@ I love my beat-free murgers, I hate it when they bake murgers with beat
 ---
 
 ## TODO
-- Recipes
-    - Recipe types???
-- Item Groups
-- lang file
-    - "Translations"
-    - Maybe tooltips
 - Maybe add to loot table
 - Maybe add advancements?
-- Add tags (Murger)
+    - Eat murger
+    - Craft/get golden murger?
+    - Eat golden murger
+    - Craft/get netherite murger
+    - Eat netherite murger
 - Maybe add player statistics
+- Make netherite murgers more powerful

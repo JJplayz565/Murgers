@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SBS",
+        " M ",
+        " B "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "B": {
+            "item": "minecraft:bread"
+        },
+        "M": {
+            "item": "minecraft:cooked_beef"
+        }
+    },
+    "result": {
+        "id": "murgers:meefmurger"
+    }
+}

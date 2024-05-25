@@ -1,12 +1,17 @@
 package jjplayz565.murgers;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.stat.StatFormatter;
+import net.minecraft.stat.Stats;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -28,11 +33,11 @@ public class Murgers implements ModInitializer {
 	public static final Murger BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "beatfreemurger"), new Murger(new Item.Settings().food(basicTierBoth)));
 	public static final Murger GOLDEN_MEEF_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "golden_meefmurger"), new Murger(new Item.Settings().food(goldTierMeef)));
 	public static final Murger GOLDEN_BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "golden_beatfreemurger"), new Murger(new Item.Settings().food(goldTierBeatFree)));
-	public static final Murger NETHERITE_MEEF_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "netherite_meefmurger"), new Murger(new Item.Settings().food(netherTierMeef)));
-	public static final Murger NETHERITE_BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "netherite_beatfreemurger"), new Murger(new Item.Settings().food(netherTierBeatFree)));
+	public static final Murger NETHERITE_MEEF_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "netherite_meefmurger"), new Murger(new Item.Settings().food(netherTierMeef).fireproof()));
+	public static final Murger NETHERITE_BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "netherite_beatfreemurger"), new Murger(new Item.Settings().food(netherTierBeatFree).fireproof()));
 
-
-
+	public static final Identifier EATEN_MURGERS = new Identifier("murgers", "murgers_eaten");
+	
 
 	@Override
 	public void onInitialize() {
@@ -41,6 +46,16 @@ public class Murgers implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+		Registry.register(Registries.CUSTOM_STAT, "murgers_eaten", EATEN_MURGERS);
+		Stats.CUSTOM.getOrCreateStat(EATEN_MURGERS, StatFormatter.DEFAULT);
+
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, NETHERITE_BEATFREE_MURGER);});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, GOLDEN_BEATFREE_MURGER);});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, BEATFREE_MURGER);});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, NETHERITE_MEEF_MURGER);});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, GOLDEN_MEEF_MURGER);});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, MEEF_MURGER);});
 	}
 
 	public static int ticks(int seconds){

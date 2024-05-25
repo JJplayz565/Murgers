@@ -1,0 +1,22 @@
+{
+    "item.murgers.meefmurger": "Meefmurger",
+    "item.murgers.meefmurger.tooltip": "A murger bade with meef",
+    
+    "item.murgers.beatfreemurger": "Beat-Free Murger",
+    "item.murgers.beatfreemurger.tooltip": "A murger bade with a meef sumstitute",
+
+    "item.murgers.golden_meefmurger": "Golden Meefmurger",
+    "item.murgers.golden_meefmurger.tooltip": "Shiny Meefmurger",
+
+    "item.murgers.golden_beatfreemurger": "Golden Beat-Free Murger",
+    "item.murgers.golden_beatfreemurger.tooltip": "Sparkly Beat-Free Murger",
+
+    "item.murgers.netherite_meefmurger": "Netherite Meefmurger",
+    "item.murgers.netherite_meefmurger.tooltip": "Are you sure you should be eating that?",
+    
+    "item.murgers.netherite_beatfreemurger": "Netherite Beat-Free Murger",
+    "item.murgers.netherite_beatfreemurger.tooltip": "I don't think it's vegan safe anymore...",
+
+    "tag.item.murgers.murgers": "Murgers",
+    "tag.item.murgers.smelly_items": "Smelly Items"
+}

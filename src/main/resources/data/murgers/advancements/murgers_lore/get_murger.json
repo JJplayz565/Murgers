@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "id": "murgers:meefmurger"
+        },
+        "title": "+1 Murger",
+        "frame": "task",
+        "description": "What do you even do with it??",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "murgers:murgers_lore/root",
+    "criteria": {
+        "get_murger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "#murgers:murgers"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_murger"
+        ]
+    ],
+    "rewards":{
+        
+    },
+    "sends_telemetry_event": false
+}

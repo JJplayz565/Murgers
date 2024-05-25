@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bread"
+    },
+    "title": "Humble Beginnings",
+    "frame": "task",
+    "background": "murgers:textures/gui/advancements/backgrounds/murgers_lore.png",
+    "description": "You got some bread. I wonder what you could make with it?",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": null,
+  "criteria": {
+    "get_bread": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bread"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_bread"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "murgers:meefmurger",
+      "murgers:beatfreemurger"
+    ]
+  },
+  "sends_telemetry_event": false
+}
