@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "murgers:netherite_meefmurger"
+        },
+        "title": "The strongest Murger",
+        "frame": "challenge",
+        "description": "Don't you dare eat that",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "murgers:murgers_lore/get_golden",
+    "criteria": {
+        "craft_nether_meef": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "murgers:netherite_meefmurger"
+            }
+        },
+        "craft_nether_beatfree": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "murgers:netherite_beatfreemurger"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_nether_meef",
+            "craft_nether_beatfree"
+        ]
+    ],
+    "rewards": {
+        
+    },
+    "sends_telemetry_event": false
+}

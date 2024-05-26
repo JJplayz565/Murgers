@@ -1,0 +1,39 @@
+{
+    "display": {
+        "icon": {
+            "id": "murgers:golden_meefmurger"
+        },
+        "title": "Carrot + Melon flavoured",
+        "frame": "goal",
+        "description": "Do you just shove everything into your mouth?",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "murgers:murgers_lore/get_golden",
+    "criteria": {
+        "eat_golden": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "murgers:golden_meefmurger",
+                        "murgers:golden_beatfreemurger"
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eat_golden"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "murgers:netherite_meefmurger",
+            "murgers:netherite_beatfreemurger"
+        ]
+    },
+    "sends_telemetry_event": false
+}

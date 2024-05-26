@@ -36,7 +36,7 @@ public class Murgers implements ModInitializer {
 	public static final Murger NETHERITE_MEEF_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "netherite_meefmurger"), new Murger(new Item.Settings().food(netherTierMeef).fireproof()));
 	public static final Murger NETHERITE_BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "netherite_beatfreemurger"), new Murger(new Item.Settings().food(netherTierBeatFree).fireproof()));
 
-	public static final Identifier EATEN_MURGERS = new Identifier("murgers", "murgers_eaten");
+	public static final Identifier EAT_MURGERS = new Identifier("murgers", "murgers_eaten");
 	
 
 	@Override
@@ -47,8 +47,8 @@ public class Murgers implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 
-		Registry.register(Registries.CUSTOM_STAT, "murgers_eaten", EATEN_MURGERS);
-		Stats.CUSTOM.getOrCreateStat(EATEN_MURGERS, StatFormatter.DEFAULT);
+		Registry.register(Registries.CUSTOM_STAT, "murgers_eaten", EAT_MURGERS);
+		Stats.CUSTOM.getOrCreateStat(EAT_MURGERS, StatFormatter.DEFAULT);
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, NETHERITE_BEATFREE_MURGER);});
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, GOLDEN_BEATFREE_MURGER);});

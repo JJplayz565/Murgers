@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "murgers:golden_meefmurger"
+        },
+        "title": "The Golden One",
+        "frame": "task",
+        "description": "What made you put gold on it?",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "murgers:murgers_lore/get_murger",
+    "criteria": {
+        "craft_golden_meef": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "murgers:golden_meefmurger"
+            }
+        },
+        "craft_golden_beatfree": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "murgers:golden_beatfreemurger"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_golden_meef",
+            "craft_golden_beatfree"
+        ]
+    ],
+    "rewards": {
+        
+    },
+    "sends_telemetry_event": false
+}

@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "id": "murgers:meefmurger"
+        },
+        "title": "That tastes weird",
+        "frame": "task",
+        "description": "Why did you EAT it?",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "murgers:murgers_lore/get_murger",
+    "criteria": {
+        "eat_murger": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "murgers:meefmurger",
+                        "murgers:beatfreemurger",
+                        "murgers:golden_meefmurger",
+                        "murgers:golden_beatfreemurger",
+                        "murgers:netherite_meefmurger",
+                        "murgers:netherite_beatfreemurger"
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eat_murger"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "murgers:golden_meefmurger",
+            "murgers:golden_beatfreemurger"
+        ]
+    },
+    "sends_telemetry_event": false
+}

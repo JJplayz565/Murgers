@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "id": "murgers:netherite_meefmurger"
+        },
+        "title": "Hmm... Crunchy",
+        "frame": "challenge",
+        "description": "That can't be healthy",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "murgers:murgers_lore/get_nether",
+    "criteria": {
+        "eat_nether": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "murgers:netherite_meefmurger",
+                        "murgers:netherite_beatfreemurger"
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eat_nether"
+        ]
+    ],
+    "rewards": {
+        
+    },
+    "sends_telemetry_event": false
+}

@@ -15,9 +15,16 @@
         "get_murger": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
+                "item": [
                     {
-                        "tag": "#murgers:murgers"
+                        "items": [
+                            "murgers:meefmurger",
+                            "murgers:beatfreemurger",
+                            "murgers:golden_meefmurger",
+                            "murgers:golden_beatfreemurger",
+                            "murgers:netherite_meefmurger",
+                            "murgers:netherite_beatfreemurger"
+                        ]
                     }
                 ]
             }
