@@ -33,7 +33,8 @@
         "recipes": [
             "murgers:netherite_meefmurger",
             "murgers:netherite_beatfreemurger"
-        ]
+        ],
+        "experience": 50
     },
     "sends_telemetry_event": false
 }
