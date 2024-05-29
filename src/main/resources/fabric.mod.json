@@ -1,19 +1,22 @@
 {
 	"schemaVersion": 1,
 	"id": "murgers",
-	"version": "${version}",
+	"version": "0.1.0",
 	"name": "Murgers",
 	"description": "Adds a new food item set",
 	"authors": [
 		"JJplayz565"
 	],
+	"contributors": [
+		"imBiscuit_"
+	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/JJplayz565/Murgers",
+		"issues": "https://github.com/JJplayz565/Murgers/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/murgers/icon.png",
-	"environment": "*",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
 			"jjplayz565.murgers.Murgers"

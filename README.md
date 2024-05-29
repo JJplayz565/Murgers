@@ -1,15 +1,16 @@
 # Murgers
 I love my beat-free murgers, I hate it when they bake murgers with beat
 
+![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png)![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png)![Golden MeefMurger](./src/main/resources/assets/murgers/textures/item/golden_meefmurger.png)![Golden Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/golden_beatfreemurger.png)![Netherite MeefMurger](./src/main/resources/assets/murgers/textures/item/netherite_meefmurger.png)![Netherite Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/netherite_beatfreemurger.png)
+
 ---
 
 ## Content
-- Murgers ![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png)
-- Advancements, recipes and other things related to murgers
+![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png) Murgers
+![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png) Advancements, recipes, a statistic and other things related to murgers
 
 ---
 
 ## TODO
-- Maybe add to loot table
-- Finish the player statistics
-- Make netherite murgers more powerful
+![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png) Maybe add to loot table
+![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png) Make netherite murgers more powerful

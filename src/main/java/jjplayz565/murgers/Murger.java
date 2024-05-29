@@ -3,9 +3,12 @@ package jjplayz565.murgers;
 import java.util.List;
 
 import net.minecraft.client.item.TooltipType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
+import net.minecraft.world.World;
 
 public class Murger extends Item{
     public Murger(Settings settings){
@@ -21,5 +24,11 @@ public class Murger extends Item{
     }
 
     
+    @Override
+    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        PlayerEntity player = (PlayerEntity) user;
+        player.incrementStat(Murgers.EATEN_MURGERS);
+        return super.finishUsing(stack, world, user);
+    }
     
 }
