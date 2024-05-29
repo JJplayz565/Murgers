@@ -15,7 +15,7 @@
         "get_murger": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "item": [
+                "items": [
                     {
                         "items": [
                             "murgers:meefmurger",
