@@ -7,10 +7,10 @@ I love my beat-free murgers, I hate it when they bake murgers with beat
 
 ## Content
 ![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png) Murgers
+
 ![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png) Advancements, recipes, a statistic and other things related to murgers
 
 ---
 
 ## TODO
 ![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png) Maybe add to loot table
-![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png) Make netherite murgers more powerful
