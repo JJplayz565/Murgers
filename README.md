@@ -13,4 +13,8 @@ I love my beat-free murgers, I hate it when they bake murgers with beat
 ---
 
 ## TODO
-![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png) Maybe add to loot table
+![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png) Mini Murgers(mite-sized, murger mites, bini)
+
+![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png) Gubby Murgers
+
+![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png) Big Murgers(mig, bega, jubmo)
