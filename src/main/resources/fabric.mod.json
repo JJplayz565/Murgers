@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "murgers",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "Murgers",
 	"description": "Adds a new food item set",
 	"authors": [
