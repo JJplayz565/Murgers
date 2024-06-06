@@ -6,10 +6,12 @@ import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.stat.StatFormatter;
 import net.minecraft.stat.Stats;
 import net.minecraft.util.Identifier;
@@ -49,13 +51,22 @@ public class Murgers implements ModInitializer {
 
 		
 		Stats.CUSTOM.getOrCreateStat(EATEN_MURGERS, StatFormatter.DEFAULT);
+		
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, MEEF_MURGER, Items.PUMPKIN_PIE);
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, GOLDEN_MEEF_MURGER, MEEF_MURGER);
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, NETHERITE_MEEF_MURGER, GOLDEN_MEEF_MURGER);
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, BEATFREE_MURGER, NETHERITE_MEEF_MURGER);
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, GOLDEN_BEATFREE_MURGER, BEATFREE_MURGER);
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, NETHERITE_BEATFREE_MURGER, GOLDEN_BEATFREE_MURGER);
+	}
 
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, NETHERITE_BEATFREE_MURGER);});
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, GOLDEN_BEATFREE_MURGER);});
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, BEATFREE_MURGER);});
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, NETHERITE_MEEF_MURGER);});
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, GOLDEN_MEEF_MURGER);});
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {content.addAfter(Items.PUMPKIN_PIE, MEEF_MURGER);});
+	private static void addToItemGroup(RegistryKey<ItemGroup> group, Item item, Item after){
+		ItemGroupEvents.modifyEntriesEvent(group).register(content -> {content.addAfter(after, item);});
+		String temp = group.toString();
+        int beginIndex = temp.indexOf("/ ");
+		int endIndex = temp.indexOf("]");
+        String groupString = temp.substring(beginIndex + 1, endIndex);
+		LOGGER.info("Added " + item + " to item group " + groupString + " after " + after);
 	}
 
 	public static int ticks(int seconds){
