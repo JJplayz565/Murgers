@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " S ",
+        " B ",
+        " S "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "B": {
+            "item": "minecraft:slime_ball"
+        }
+    },
+    "result": {
+        "id": "murgers:gubbymurger"
+    }
+}

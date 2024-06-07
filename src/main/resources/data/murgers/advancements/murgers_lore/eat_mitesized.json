@@ -1,24 +1,23 @@
 {
     "display": {
         "icon": {
-            "id": "murgers:netherite_meefmurger"
+            "id": "murgers:mitesizedmurger"
         },
-        "title": "Hmm... Crunchy",
-        "frame": "challenge",
-        "description": "That can't be healthy",
+        "title": "It fits in your pocket!",
+        "frame": "goal",
+        "description": "It so smol",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
-    "parent": "murgers:murgers_lore/get_nether",
+    "parent": "murgers:murgers_lore/get_murger",
     "criteria": {
-        "eat_nether": {
+        "eat_mitesizedmurger": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "items": [
-                        "murgers:netherite_meefmurger",
-                        "murgers:netherite_beatfreemurger"
+                        "murgers:mitesizedmurger"
                     ]
                 }
             }
@@ -26,11 +25,11 @@
     },
     "requirements": [
         [
-            "eat_nether"
+            "eat_mitesizedmurger"
         ]
     ],
     "rewards": {
-        "experience": 100
+        "experience": 25
     },
     "sends_telemetry_event": false
 }

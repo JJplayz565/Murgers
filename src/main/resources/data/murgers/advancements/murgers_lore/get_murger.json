@@ -23,7 +23,9 @@
                             "murgers:golden_meefmurger",
                             "murgers:golden_beatfreemurger",
                             "murgers:netherite_meefmurger",
-                            "murgers:netherite_beatfreemurger"
+                            "murgers:netherite_beatfreemurger",
+                            "murgers:mitesizedmurger",
+                            "murgers:gubbymurger"
                         ]
                     }
                 ]
@@ -36,7 +38,10 @@
         ]
     ],
     "rewards":{
-        
+        "recipes": [
+            "murgers:mitesizedmurger",
+            "murgers:gubbymurger"
+        ]
     },
     "sends_telemetry_event": false
 }

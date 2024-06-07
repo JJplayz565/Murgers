@@ -32,6 +32,8 @@ public class Murgers implements ModInitializer {
 	public static final FoodComponent goldTierBeatFree = new FoodComponent.Builder().nutrition(10).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(40), 1), 1.0f).alwaysEdible().build();
 	public static final FoodComponent netherTierMeef = new FoodComponent.Builder().nutrition(12).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(40), 2),1.0f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, ticks(90), 2), 1.0f).alwaysEdible().build();
 	public static final FoodComponent netherTierBeatFree = new FoodComponent.Builder().nutrition(12).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, ticks(20), 2), 1.0f).alwaysEdible().build();
+	public static final FoodComponent mitesized = new FoodComponent.Builder().nutrition(4).saturationModifier(satMod).snack().build();
+	public static final FoodComponent gubby = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3f).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(5), 3), 0.8f).statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, ticks(10), 2), 0.2f).alwaysEdible().build();
 
 	public static final Murger MEEF_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "meefmurger"), new Murger(new Item.Settings().food(basicTierBoth)));
 	public static final Murger BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "beatfreemurger"), new Murger(new Item.Settings().food(basicTierBoth)));
@@ -39,7 +41,8 @@ public class Murgers implements ModInitializer {
 	public static final Murger GOLDEN_BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "golden_beatfreemurger"), new Murger(new Item.Settings().food(goldTierBeatFree)));
 	public static final Murger NETHERITE_MEEF_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "netherite_meefmurger"), new Murger(new Item.Settings().food(netherTierMeef).fireproof()));
 	public static final Murger NETHERITE_BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "netherite_beatfreemurger"), new Murger(new Item.Settings().food(netherTierBeatFree).fireproof()));
-
+	public static final Murger MITESIZED_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "mitesizedmurger"), new Murger(new Item.Settings().food(mitesized)));
+	public static final Murger GUBBY_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "gubbymurger"), new Murger(new Item.Settings().food(gubby)));
 	
 	public static final Identifier EATEN_MURGERS = Registry.register(Registries.CUSTOM_STAT, "murgers_eaten", new Identifier("murgers", "murgers_eaten"));
 
@@ -54,12 +57,14 @@ public class Murgers implements ModInitializer {
 		
 		Stats.CUSTOM.getOrCreateStat(EATEN_MURGERS, StatFormatter.DEFAULT);
 		
-		addToItemGroup(ItemGroups.FOOD_AND_DRINK, MEEF_MURGER, Items.PUMPKIN_PIE);
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, MITESIZED_MURGER, Items.PUMPKIN_PIE);
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, MEEF_MURGER, MITESIZED_MURGER);
 		addToItemGroup(ItemGroups.FOOD_AND_DRINK, GOLDEN_MEEF_MURGER, MEEF_MURGER);
 		addToItemGroup(ItemGroups.FOOD_AND_DRINK, NETHERITE_MEEF_MURGER, GOLDEN_MEEF_MURGER);
 		addToItemGroup(ItemGroups.FOOD_AND_DRINK, BEATFREE_MURGER, NETHERITE_MEEF_MURGER);
 		addToItemGroup(ItemGroups.FOOD_AND_DRINK, GOLDEN_BEATFREE_MURGER, BEATFREE_MURGER);
 		addToItemGroup(ItemGroups.FOOD_AND_DRINK, NETHERITE_BEATFREE_MURGER, GOLDEN_BEATFREE_MURGER);
+		addToItemGroup(ItemGroups.FOOD_AND_DRINK, GUBBY_MURGER, NETHERITE_BEATFREE_MURGER);
 	}
 
 	private static void addToItemGroup(RegistryKey<ItemGroup> group, Item item, Item after){

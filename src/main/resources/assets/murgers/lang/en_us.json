@@ -17,6 +17,12 @@
     "item.murgers.netherite_beatfreemurger": "Netherite Beat-Free Murger",
     "item.murgers.netherite_beatfreemurger.tooltip": "I don't think it's vegan safe anymore...",
 
+    "item.murgers.mitesizedmurger": "Mite-Sized Murger",
+    "item.murgers.mitesizedmurger.tooltip": "It's tiny!",
+
+    "item.murgers.gubbymurger": "Gubby Murger",
+    "item.murgers.gubbymurger.tooltip": "Chewy",
+
     "tag.item.murgers.murgers": "Murgers",
 
     "stat.murgers.murgers_eaten": "Murgers Eaten"

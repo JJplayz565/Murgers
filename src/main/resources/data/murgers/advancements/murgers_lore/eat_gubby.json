@@ -1,24 +1,23 @@
 {
     "display": {
         "icon": {
-            "id": "murgers:netherite_meefmurger"
+            "id": "murgers:gubbymurger"
         },
-        "title": "Hmm... Crunchy",
-        "frame": "challenge",
-        "description": "That can't be healthy",
+        "title": "Full o' sugar",
+        "frame": "goal",
+        "description": "Can't be good for you",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
-    "parent": "murgers:murgers_lore/get_nether",
+    "parent": "murgers:murgers_lore/get_murger",
     "criteria": {
-        "eat_nether": {
+        "eat_gubbymurger": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "items": [
-                        "murgers:netherite_meefmurger",
-                        "murgers:netherite_beatfreemurger"
+                        "murgers:gubbymurger"
                     ]
                 }
             }
@@ -26,11 +25,11 @@
     },
     "requirements": [
         [
-            "eat_nether"
+            "eat_gubbymurger"
         ]
     ],
     "rewards": {
-        "experience": 100
+        "experience": 25
     },
     "sends_telemetry_event": false
 }
