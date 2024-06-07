@@ -23,13 +23,15 @@ public class Murgers implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-    public static final Logger LOGGER = LoggerFactory.getLogger("murgers");
+    public static final Logger LOGGER = LoggerFactory.getLogger("Murgers");
 
-	public static final FoodComponent basicTierBoth = new FoodComponent.Builder().nutrition(8).build();
-	public static final FoodComponent goldTierMeef = new FoodComponent.Builder().nutrition(10).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(30), 0), 1.0f).alwaysEdible().build();
-	public static final FoodComponent goldTierBeatFree = new FoodComponent.Builder().nutrition(10).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(40), 1), 1.0f).alwaysEdible().build();
-	public static final FoodComponent netherTierMeef = new FoodComponent.Builder().nutrition(12).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(40), 2),1.0f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, ticks(90), 2), 1.0f).alwaysEdible().build();
-	public static final FoodComponent netherTierBeatFree = new FoodComponent.Builder().nutrition(12).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, ticks(20), 2), 1.0f).alwaysEdible().build();
+	private static final float satMod = 0.563f;
+
+	public static final FoodComponent basicTierBoth = new FoodComponent.Builder().nutrition(8).saturationModifier(satMod).build();
+	public static final FoodComponent goldTierMeef = new FoodComponent.Builder().nutrition(10).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(30), 0), 1.0f).alwaysEdible().build();
+	public static final FoodComponent goldTierBeatFree = new FoodComponent.Builder().nutrition(10).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(40), 1), 1.0f).alwaysEdible().build();
+	public static final FoodComponent netherTierMeef = new FoodComponent.Builder().nutrition(12).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(40), 2),1.0f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, ticks(90), 2), 1.0f).alwaysEdible().build();
+	public static final FoodComponent netherTierBeatFree = new FoodComponent.Builder().nutrition(12).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, ticks(20), 2), 1.0f).alwaysEdible().build();
 
 	public static final Murger MEEF_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "meefmurger"), new Murger(new Item.Settings().food(basicTierBoth)));
 	public static final Murger BEATFREE_MURGER = Registry.register(Registries.ITEM, new Identifier("murgers", "beatfreemurger"), new Murger(new Item.Settings().food(basicTierBoth)));
