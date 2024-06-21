@@ -27,11 +27,11 @@ public class Murgers implements ModInitializer {
 
 	private static final float satMod = 0.563f;
 
-	public static final FoodComponent basicTierBoth = new FoodComponent.Builder().nutrition(8).saturationModifier(satMod).build();
-	public static final FoodComponent goldTierMeef = new FoodComponent.Builder().nutrition(10).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(30), 0), 1.0f).alwaysEdible().build();
-	public static final FoodComponent goldTierBeatFree = new FoodComponent.Builder().nutrition(10).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(40), 1), 1.0f).alwaysEdible().build();
-	public static final FoodComponent netherTierMeef = new FoodComponent.Builder().nutrition(12).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(40), 2),1.0f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, ticks(90), 2), 1.0f).alwaysEdible().build();
-	public static final FoodComponent netherTierBeatFree = new FoodComponent.Builder().nutrition(12).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, ticks(20), 2), 1.0f).alwaysEdible().build();
+	public static final FoodComponent basicTierBoth = new FoodComponent.Builder().nutrition(10).saturationModifier(satMod).build();
+	public static final FoodComponent goldTierMeef = new FoodComponent.Builder().nutrition(12).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(30), 0), 1.0f).alwaysEdible().build();
+	public static final FoodComponent goldTierBeatFree = new FoodComponent.Builder().nutrition(12).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(40), 1), 1.0f).alwaysEdible().build();
+	public static final FoodComponent netherTierMeef = new FoodComponent.Builder().nutrition(14).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, ticks(40), 2),1.0f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, ticks(90), 2), 1.0f).alwaysEdible().build();
+	public static final FoodComponent netherTierBeatFree = new FoodComponent.Builder().nutrition(14).saturationModifier(satMod).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, ticks(90), 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, ticks(20), 2), 1.0f).alwaysEdible().build();
 	public static final FoodComponent mitesized = new FoodComponent.Builder().nutrition(4).saturationModifier(satMod).snack().build();
 	public static final FoodComponent gubby = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3f).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(5), 3), 0.8f).statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, ticks(5), 2), 0.2f).alwaysEdible().build();
 

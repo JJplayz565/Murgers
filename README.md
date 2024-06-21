@@ -10,6 +10,10 @@ I love beat-free murgers, I hate it when they bake murgers with beat
 
 ![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Advancements, recipes, a statistic and other things related to murgers
 
+![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Works with [Eating Animation](https://modrinth.com/mod/eating-animation)
+
 ---
 
 ## TODO
+
+![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Update to 1.21
