@@ -6,5 +6,5 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class MurgersItemTags {
-    public static final TagKey<Item> MURGERS = TagKey.of(RegistryKeys.ITEM, new Identifier("tag.item.murgers.murgers"));
+    public static final TagKey<Item> MURGERS = TagKey.of(RegistryKeys.ITEM, Identifier.of("tag.item.murgers.murgers"));
 }
