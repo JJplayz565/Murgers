@@ -1,27 +1,27 @@
 {
     "item.murgers.meefmurger": "Meefmurger",
-    "item.murgers.meefmurger.tooltip": "§8A murger bade with meef",
+    "item.murgers.murgers:meefmurger.tooltip": "§8A murger bade with meef",
     
     "item.murgers.beatfreemurger": "Beat-Free Murger",
-    "item.murgers.beatfreemurger.tooltip": "§8A murger bade with a meef sumstitute",
+    "item.murgers.murgers:beatfreemurger.tooltip": "§8A murger bade with a meef sumstitute",
 
     "item.murgers.golden_meefmurger": "Golden Meefmurger",
-    "item.murgers.golden_meefmurger.tooltip": "§8Shiny Meefmurger",
+    "item.murgers.murgers:golden_meefmurger.tooltip": "§8Shiny Meefmurger",
 
     "item.murgers.golden_beatfreemurger": "Golden Beat-Free Murger",
-    "item.murgers.golden_beatfreemurger.tooltip": "§8Sparkly Beat-Free Murger",
+    "item.murgers.murgers:golden_beatfreemurger.tooltip": "§8Sparkly Beat-Free Murger",
 
     "item.murgers.netherite_meefmurger": "Netherite Meefmurger",
-    "item.murgers.netherite_meefmurger.tooltip": "§8Are you sure you should be eating that?",
+    "item.murgers.murgers:netherite_meefmurger.tooltip": "§8Are you sure you should be eating that?",
     
     "item.murgers.netherite_beatfreemurger": "Netherite Beat-Free Murger",
-    "item.murgers.netherite_beatfreemurger.tooltip": "§8I don't think it's vegan safe anymore...",
+    "item.murgers.murgers:netherite_beatfreemurger.tooltip": "§8I don't think it's vegan safe anymore...",
 
     "item.murgers.mitesizedmurger": "Mite-Sized Murger",
-    "item.murgers.mitesizedmurger.tooltip": "§8It's tiny!",
+    "item.murgers.murgers:mitesizedmurger.tooltip": "§8It's tiny!",
 
     "item.murgers.gubbymurger": "Gubby Murger",
-    "item.murgers.gubbymurger.tooltip": "§8Chewy",
+    "item.murgers.murgers:gubbymurger.tooltip": "§8Chewy",
 
     "tag.item.murgers.murgers": "Murgers",
 
