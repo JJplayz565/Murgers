@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "murgers:murger_stand",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 32,
+        "seperation": 8,
+        "salt": 14357622
+    }
+}
