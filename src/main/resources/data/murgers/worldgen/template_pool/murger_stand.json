@@ -4,9 +4,9 @@
         {
             "weight": 1,
             "element": {
-                "projection": "rigid",
                 "element_type": "minecraft:single_pool_element",
-                "location": "murgers:murger_stand",
+                "location": "murgers:murger_stand_file",
+                "projection": "rigid",
                 "processors": "minecraft:empty"
             }
         }
