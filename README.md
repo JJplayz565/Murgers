@@ -10,14 +10,10 @@ I love beat-free murgers, I hate it when they bake murgers with beat
 
 ![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Advancements, recipes, a statistic and other things related to murgers
 
-![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Naturally generating Murger Stand
+![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Naturally generating Murger Stand (containing a chest with its own loot table)
 
 ![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Works with [Eating Animation](https://modrinth.com/mod/eating-animation) ![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png)![MeefMurger Eaten 1](./src/main/resources/assets/murgers/textures/item/meefmurger_eating_0.png)![MeefMurger Eaten 2](./src/main/resources/assets/murgers/textures/item/meefmurger_eating_1.png)![MeefMurger Eaten 3](./src/main/resources/assets/murgers/textures/item/meefmurger_eating_2.png)
 
 ---
 
 ## TODO
-
-![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Remake murger_stand_file.nbt (so that it has a layer of ground at the bottom)
-
-![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Add chest and loot pool to Murger Stand
