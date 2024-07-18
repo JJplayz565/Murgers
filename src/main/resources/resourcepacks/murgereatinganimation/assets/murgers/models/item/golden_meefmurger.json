@@ -1,0 +1,30 @@
+{
+    "parent": "item/generated",
+    "textures":{
+        "layer0": "murgers:item/golden_meefmurger"
+    },
+
+    "overrides": [
+        {
+            "predicate": {
+                "eating": 1,
+                "eat": 0.35
+            },
+            "model": "murgers:item/golden_meefmurger_eating_0"
+        },
+        {
+            "predicate": {
+                "eating": 1,
+                "eat": 0.70
+            },
+            "model": "murgers:item/golden_meefmurger_eating_1"
+        },
+        {
+            "predicate": {
+                "eating": 1,
+                "eat": 0.90
+            },
+            "model": "murgers:item/golden_meefmurger_eating_2"
+        }
+    ]
+}
