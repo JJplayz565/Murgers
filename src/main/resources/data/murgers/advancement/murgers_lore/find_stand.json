@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:filled_map"
+        },
+        "title": "The Lost Murger",
+        "description": "Well, it's not lost anymore...",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "find_murgerstand": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "structures": "murgers:murger_stand"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "find_murgerstand"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    },
+    "sends_telemetry_event": false
+}
