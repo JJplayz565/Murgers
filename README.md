@@ -1,7 +1,7 @@
 # Murgers
 I love beat-free murgers, I hate it when they bake murgers with beat
 
-![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png)![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png)![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png)![Golden MeefMurger](./src/main/resources/assets/murgers/textures/item/golden_meefmurger.png)![Golden Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/golden_beatfreemurger.png)![Netherite MeefMurger](./src/main/resources/assets/murgers/textures/item/netherite_meefmurger.png)![Netherite Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/netherite_beatfreemurger.png)![Gubby Murger](./src/main/resources/assets/murgers/textures/item/gubbymurger.png)
+![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png)![MeefMurger](./src/main/resources/assets/murgers/textures/item/meefmurger.png)![Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/beatfreemurger.png)![Golden MeefMurger](./src/main/resources/assets/murgers/textures/item/golden_meefmurger.png)![Golden Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/golden_beatfreemurger.png)![Netherite MeefMurger](./src/main/resources/assets/murgers/textures/item/netherite_meefmurger.png)![Netherite Beat-Free Murger](./src/main/resources/assets/murgers/textures/item/netherite_beatfreemurger.png)![Super Murger](./src/main/resources/assets/murgers/textures/item/super_murger.png)![Gubby Murger](./src/main/resources/assets/murgers/textures/item/gubbymurger.png)![Belted Gubby Murger](./src/main/resources/assets/murgers/textures/item/belted_gubbymurger.png)
 
 ---
 
@@ -17,7 +17,3 @@ I love beat-free murgers, I hate it when they bake murgers with beat
 ![Mite-Sized Murger](./src/main/resources/assets/murgers/textures/item/mitesizedmurger.png) Now has HD textures. Thanks for 100 downloads on [Modrinth](https://modrinth.com/mod/murgers).
 
 ![HD  MeefMurger](./src/main/resources/resourcepacks/hd-textures/assets/murgers/textures/item/meefmurger.png)
-
----
-
-## TODO
