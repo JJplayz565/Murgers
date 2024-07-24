@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures":{
+        "layer0": "murgers:item/belted_gubbymurger_eating_0"
+    }
+}

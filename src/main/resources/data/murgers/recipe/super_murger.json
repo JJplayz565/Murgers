@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABC",
+        "DDD",
+        "EFG"
+    ],
+    "key": {
+        "A": {
+            "item": "murgers:meefmurger"
+        },
+        "B": {
+            "item": "murgers:golden_meefmurger"
+        },
+        "C": {
+            "item": "murgers:netherite_meefmurger"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "E": {
+            "item": "murgers:beatfreemurger"
+        },
+        "F": {
+            "item": "murgers:golden_beatfreemurger"
+        },
+        "G": {
+            "item": "murgers:netherite_beatfreemurger"
+        }
+    },
+    "result": {
+        "id": "murgers:super_murger"
+    }
+}

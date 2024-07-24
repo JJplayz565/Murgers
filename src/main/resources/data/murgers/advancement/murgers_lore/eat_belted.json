@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "id": "murgers:gubbymurger"
+            "id": "murgers:belted_gubbymurger"
         },
-        "title": "Full o' sugar",
-        "frame": "task",
-        "description": "Can't be good for you",
+        "title": "Gooey",
+        "frame": "goal",
+        "description": "Ewwww",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
     },
-    "parent": "murgers:murgers_lore/get_murger",
+    "parent": "murgers:murgers_lore/eat_gubby",
     "criteria": {
-        "eat_gubbymurger": {
+        "eat_belted_gubbymurger": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "items": [
-                        "murgers:gubbymurger"
+                        "murgers:belted_gubbymurger"
                     ]
                 }
             }
@@ -25,15 +25,11 @@
     },
     "requirements": [
         [
-            "eat_gubbymurger"
+            "eat_belted_gubbymurger"
         ]
     ],
     "rewards": {
-        "experience": 25,
-        "recipes": [
-            "belted_gubbymurger_smelting",
-            "belted_gubbymurger_smoking"
-        ]
+        "experience": 25
     },
     "sends_telemetry_event": false
 }

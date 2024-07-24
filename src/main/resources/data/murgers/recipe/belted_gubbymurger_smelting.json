@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smelting",
+    "category": "food",
+    "ingredient": {
+        "item": "murgers:gubbymurger"
+    },
+    "result": {
+        "id": "murgers:belted_gubbymurger"
+    },
+    "experience": 0.5
+}

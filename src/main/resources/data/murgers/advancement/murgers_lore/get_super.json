@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "id": "murgers:super_murger"
+        },
+        "title": "This is getting out of hand",
+        "frame": "challenge",
+        "description": "The §lactual§r strongest Murger",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "murgers:murgers_lore/get_nether",
+    "criteria": {
+        "craft_super": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "murgers:super_murger"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_super"
+        ]
+    ],
+    "rewards": {
+        "experience": 200
+    },
+    "sends_telemetry_event": false
+}

@@ -1,24 +1,23 @@
 {
     "display": {
         "icon": {
-            "id": "murgers:netherite_meefmurger"
+            "id": "murgers:super_murger"
         },
-        "title": "Hmm... Crunchy",
-        "frame": "goal",
-        "description": "That can't be healthy",
+        "title": "I am GOD",
+        "frame": "challenge",
+        "description": "Needs more salt",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "murgers:murgers_lore/get_nether",
+    "parent": "murgers:murgers_lore/get_super",
     "criteria": {
-        "eat_nether": {
+        "eat_super": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "items": [
-                        "murgers:netherite_meefmurger",
-                        "murgers:netherite_beatfreemurger"
+                        "murgers:super_murger"
                     ]
                 }
             }
@@ -26,14 +25,11 @@
     },
     "requirements": [
         [
-            "eat_nether"
+            "eat_super"
         ]
     ],
     "rewards": {
-        "experience": 100,
-        "recipes": [
-            "murgers:super_murger"
-        ]
+        "experience": 100
     },
     "sends_telemetry_event": false
 }

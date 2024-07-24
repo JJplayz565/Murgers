@@ -17,11 +17,17 @@
     "item.murgers.netherite_beatfreemurger": "Netherite Beat-Free Murger",
     "item.murgers.netherite_beatfreemurger.tooltip": "§8I don't think it's vegan safe anymore...",
 
+    "item.murgers.super_murger": "Super Murger",
+    "item.murgers.super_murger.tooltip": "§8Feels Holy",
+
     "item.murgers.mitesizedmurger": "Mite-Sized Murger",
     "item.murgers.mitesizedmurger.tooltip": "§8It's tiny!",
 
     "item.murgers.gubbymurger": "Gubby Murger",
     "item.murgers.gubbymurger.tooltip": "§8Chewy",
+
+    "item.murgers.belted_gubbymurger": "Belted Gubby Murger",
+    "item.murgers.belted_gubbymurger.tooltip": "§8It's just a blob of sugar",
 
     "tag.item.murgers.murgers": "Murgers",
 
