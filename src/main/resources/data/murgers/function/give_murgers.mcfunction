@@ -1,0 +1,10 @@
+give @s murgers:mitesizedmurger
+give @s murgers:meefmurger
+give @s murgers:golden_meefmurger
+give @s murgers:netherite_meefmurger
+give @s murgers:beatfreemurger
+give @s murgers:golden_beatfreemurger
+give @s murgers:netherite_beatfreemurger
+give @s murgers:super_murger
+give @s murgers:gubbymurger
+give @s murgers:belted_gubbymurger
