@@ -37,7 +37,6 @@ public class Murgers implements ModInitializer {
 	public static final FoodComponent gubby = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3f).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, ticks(5), 3), 0.8f).statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, ticks(5), 2), 0.2f).alwaysEdible().build();
 	public static final FoodComponent beltedGubby = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3f).statusEffect(new StatusEffectInstance(StatusEffects.OOZING, ticks(1200), 0), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, ticks(10), 0), 0.5f).alwaysEdible().build();
 
-
 	public static final Murger MEEF_MURGER = Registry.register(Registries.ITEM, Identifier.of("murgers", "meefmurger"), new Murger(new Item.Settings().food(basicTierBoth)));
 	public static final Murger BEATFREE_MURGER = Registry.register(Registries.ITEM, Identifier.of("murgers", "beatfreemurger"), new Murger(new Item.Settings().food(basicTierBoth)));
 	public static final Murger GOLDEN_MEEF_MURGER = Registry.register(Registries.ITEM, Identifier.of("murgers", "golden_meefmurger"), new Murger(new Item.Settings().food(goldTierMeef)));
@@ -57,7 +56,7 @@ public class Murgers implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Initialising!");
 
 		
 		Stats.CUSTOM.getOrCreateStat(EATEN_MURGERS, StatFormatter.DEFAULT);
